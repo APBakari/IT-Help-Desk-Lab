@@ -1,0 +1,19 @@
+# Local lab artifacts
+*.vdi
+*.vbox
+*.vbox-prev
+*.iso
+*.ova
+*.ovf
+
+# Credentials/secrets
+*.key
+*.pem
+*.pfx
+*.p12
+credentials*
+secrets*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
