@@ -1,0 +1,30 @@
+===== PC Diagnostic Report =====
+
+Computer Name:
+CLIENT01
+
+Logged In User:
+COMPANY\djohnson
+
+Windows Information:
+Microsoft Windows 11 Enterprise Evaluation
+Version: 10.0.26300
+Architecture: 64-bit
+
+IPv4 Configuration:
+Ethernet    10.10.10.20/24
+
+DNS Servers:
+Ethernet    10.10.10.10
+
+Network Adapters:
+Ethernet    Up    1 Gbps
+
+Installed RAM:
+3.98 GB
+
+Domain Information:
+Domain: company.local
+PartOfDomain: True
+
+===== Diagnostic Complete =====
