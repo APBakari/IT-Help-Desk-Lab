@@ -68,15 +68,11 @@ Departmental security groups include:
 
 See [Active-Directory/README.md](Active-Directory/README.md).
 
-![Active Directory users and OUs](Screenshots/active-directory-users.jpg)
-
 ## Domain-Joined Workstation
 
 `CLIENT01` was configured with a static address of `10.10.10.20`, pointed to the domain controller at `10.10.10.10` for DNS, and joined to `company.local`.
 
 A domain user was then able to sign in successfully to the workstation.
-
-![Domain user signed in to CLIENT01](Screenshots/domain-user-login.jpg)
 
 ## Shared Folder Permissions
 
@@ -89,8 +85,6 @@ Created an Accounting department share at:
 Access was restricted to the `Accounting-Users` security group using both share permissions and NTFS permissions.
 
 A Sales user was correctly denied access, confirming that authorization was working as designed.
-
-![Unauthorized user denied access](Screenshots/accounting-access-denied.jpg)
 
 See [Shared-Folders/README.md](Shared-Folders/README.md).
 
@@ -105,10 +99,6 @@ A: -> \\DC01\Accounting
 for Accounting users.
 
 Verification was performed with `net use`, `gpresult /r`, and File Explorer.
-
-![Mapped Accounting drive](Screenshots/accounting-drive.jpg)
-
-![Group Policy verification](Screenshots/gpresult-accounting-drive.jpg)
 
 See [Group-Policy/README.md](Group-Policy/README.md).
 
@@ -141,8 +131,6 @@ Troubleshooting showed that:
 
 The workstation was restored to `10.10.10.10`, the DNS cache was flushed, and domain/resource access was verified.
 
-![DNS troubleshooting failure](Screenshots/dns-troubleshooting.jpg)
-
 See [Networking/README.md](Networking/README.md).
 
 ## PowerShell Diagnostic Script
@@ -160,8 +148,6 @@ Created `PC-Diagnostic.ps1` to collect common workstation troubleshooting inform
 - Domain membership
 
 The script also creates timestamped diagnostic reports.
-
-![PowerShell diagnostic output](Screenshots/powershell-diagnostic.jpg)
 
 See [PowerShell/PC-Diagnostic.ps1](PowerShell/PC-Diagnostic.ps1).
 
